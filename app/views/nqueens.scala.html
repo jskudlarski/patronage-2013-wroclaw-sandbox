@@ -1,0 +1,43 @@
+@(queens: List[Int])
+
+@main("8 Queens Problem") {
+  
+  <style>
+    #chess_board { border:5px solid #333; }
+    #chess_board td {
+      background:#fff;
+      background:-moz-linear-gradient(top, #fff, #eee);
+      background:-webkit-gradient(linear,0 0, 0 100%, from(#fff), to(#eee));
+      box-shadow:inset 0 0 0 1px #fff;
+      -moz-box-shadow:inset 0 0 0 1px #fff;
+      -webkit-box-shadow:inset 0 0 0 1px #fff;
+      height:40px;
+      text-align:center;
+      vertical-align:middle;
+      width:40px;
+      font-size: 30px;
+    }
+    #chess_board tr:nth-child(odd) td:nth-child(even),
+    #chess_board tr:nth-child(even) td:nth-child(odd) {
+      background:#ccc;
+      background:-moz-linear-gradient(top, #ccc, #eee);
+      background:-webkit-gradient(linear,0 0, 0 100%, from(#ccc), to(#eee));
+      box-shadow:inset 0 0 10px rgba(0,0,0,.4);
+      -moz-box-shadow:inset 0 0 10px rgba(0,0,0,.4);
+      -webkit-box-shadow:inset 0 0 10px rgba(0,0,0,.4);
+    }
+  </style>
+
+  <h4>One example solution for <a href="http://en.wikipedia.org/wiki/Eight_queens_puzzle">Eight Queens Problem</a></h4>
+
+  <table id="chess_board">
+    @for(y <- 0 to 7){
+      <tr>
+        @for(x <- 0 to 7){
+          <td> @(if (x == queens(y)) 9813.toChar) </td>
+        }
+      </tr>
+    }
+  </table>
+
+}
