@@ -1,0 +1,1 @@
+experimental class created by Wojciech Słodziak in purpose of learning git
