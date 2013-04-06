@@ -4,5 +4,9 @@
     <string name="app_name">Urban Game</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-
+	<string name="active_eng">ACTIVE</string>
+ 	<string name="ended_eng">ENDED</string>
+ 	<string name="observed_eng">OBSERVED</string>
+ 	<string name="TEMPtop_bar">top bar</string>
+ 	<string name="TEMPbottom_bar">bottom bar</string>
 </resources>

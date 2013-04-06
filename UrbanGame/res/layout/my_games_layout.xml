@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MyGamesActivity" >
+
+    <LinearLayout
+        android:id="@+id/TEMPtop_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#828282"
+        android:paddingLeft="@dimen/activity_horizontal_margin" >
+
+        <TextView
+            android:id="@+id/TEMPtextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TEMPtop_bar"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TEMPbottom_bar"
+        android:layout_below="@id/TEMPtop_bar"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/active_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:text="@string/active_eng"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <View
+                android:id="@+id/separator1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@id/active_bar"
+                android:background="#000000" />
+
+            <ListView
+                android:id="@+id/TEMPactive_game_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/separator1" >
+
+            </ListView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5" >
+
+            <TextView
+                android:id="@+id/observed_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:text="@string/observed_eng"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <View
+                android:id="@+id/separator2"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@id/observed_bar"
+                android:background="#000000" />
+
+            <ListView
+                android:id="@+id/TEMPobserved_game_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/separator2" >
+
+            </ListView>
+        </RelativeLayout>
+
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5" >
+
+            <TextView
+                android:id="@+id/ended_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:text="@string/ended_eng"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <View
+                android:id="@+id/separator3"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@id/ended_bar"
+                android:background="#000000" />
+
+            <ListView
+                android:id="@+id/TEMPended_game_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/separator3" >
+
+            </ListView>
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/TEMPbottom_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#828282"
+        android:paddingLeft="@dimen/activity_horizontal_margin" >
+
+        <TextView
+            android:id="@+id/TEMPtextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TEMPbottom_bar"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+        
+</RelativeLayout>
